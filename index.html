@@ -386,6 +386,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			</div>
 		</div>
 		<!-- End Testimonial Slider -->
+		<h2 style="color:green">GeeksforGeeks</h2>
+    <b>Submit form details</b>
+  
+    <form id="form__submit" action="form.php" method="post">
+        <label>NAME: </label><br />
+        <input type="text" name="name" /><br />
+        <label>AGE: </label><br />
+        <input type="number" name="age" /><br />
+        <label>CITY: </label><br />
+        <input type="text" name="city" /><br /><br />
+        <a href="#" onclick="submitForm()">Submit Here</a>
+    </form>
+  
+    <script>
+        function submitForm() {
+            let form = document.getElementById("form__submit");
+            form.submit();
+        }
+    </script>
 
 		<!-- Start Blog Section -->
 		<div class="blog-section">
